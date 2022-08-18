@@ -1,0 +1,18 @@
+.profile-card{
+  text-align: center;
+
+  img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.sidenav-list span{
+  padding-left: 8px;
+}
+
+.mat-list-item.active{
+color: red;
+}

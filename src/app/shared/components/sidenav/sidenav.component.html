@@ -1,0 +1,27 @@
+<mat-nav-list class="sidenav-list">
+  <div class="profile-card">
+    <img src="assets/user.png" alt="">
+    <div class="header">
+      <h2>Mario</h2>
+      <h4>Turista</h4>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <a mat-list-item [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}" routerLink="/home/inicio" (click)="onToggleClose()">
+      <mat-icon>home</mat-icon>
+      <span>Inicio</span>
+  </a>
+  <a mat-list-item [routerLinkActive]="['active']" routerLink="/home/reservacion" (click)="onToggleClose()">
+      <mat-icon>receipt_long</mat-icon>
+      <span>Reservar</span>
+  </a>
+  <a mat-list-item [routerLinkActive]="['active']" routerLink="/home/perfil" (click)="onToggleClose()">
+      <mat-icon>fact_check</mat-icon>
+      <span>Perfil</span>
+  </a>
+  <a mat-list-item routerLink="/sign-in" (click)="onToggleClose()">
+      <mat-icon>logout</mat-icon>
+      <span>Cerrar Sesion</span>
+  </a>
+
+</mat-nav-list>

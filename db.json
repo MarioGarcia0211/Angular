@@ -1,0 +1,55 @@
+{
+  "usuarios": [
+    {
+      "name": "John",
+      "lastName": "Garcia",
+      "email": "garcia@gmail.com",
+      "password": "mario11",
+      "id": 1
+    },
+    {
+      "name": "Mario",
+      "lastName": "Garcia",
+      "email": "mario@gmail.com",
+      "password": "123456",
+      "id": 2
+    }
+  ],
+  "reservas": [
+    {
+      "fecha": "2022-07-13T05:00:00.000Z",
+      "cantidad": 2,
+      "id": 1
+    },
+    {
+      "fecha": "2022-07-14T05:00:00.000Z",
+      "cantidad": 10,
+      "id": 2
+    },
+    {
+      "fecha": "2022-07-22T05:00:00.000Z",
+      "cantidad": 2,
+      "id": 3
+    },
+    {
+      "fecha": "2022-07-22T05:00:00.000Z",
+      "cantidad": 20,
+      "id": 4
+    },
+    {
+      "fecha": "2022-07-22T05:00:00.000Z",
+      "cantidad": 10,
+      "id": 5
+    },
+    {
+      "fecha": "2022-07-20T05:00:00.000Z",
+      "cantidad": 3,
+      "id": 6
+    },
+    {
+      "fecha": "2022-07-19T05:00:00.000Z",
+      "cantidad": 2,
+      "id": 7
+    }
+  ]
+}

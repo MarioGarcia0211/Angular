@@ -1,0 +1,25 @@
+.signifi{
+  padding: 15px;
+
+  mat-card{
+
+    mat-card-header{
+      text-align: center;
+      clear: both;
+      display: block;
+      margin: 6px auto;
+
+      mat-card-title{
+        font-weight: bold;
+        font-size: 2rem;
+        text-transform: uppercase;
+      }
+
+    }
+  }
+}
+
+.contenedor{
+  padding: 15px;
+
+}

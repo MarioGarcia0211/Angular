@@ -1,0 +1,26 @@
+<h1 mat-dialog-title>{{title}}</h1>
+<div mat-dialog-content>
+  <form [formGroup]="reseForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Fecha de la reservacion</mat-label>
+      <input matInput formControlName="fecha" [min]="currentDate" [matDatepickerFilter]="disabledDates" [matDatepicker]="picker" readonly="inputReadonly" autocomplete="off">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker disabled="false"></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Cantidad de personas</mat-label>
+      <input matInput type="number" formControlName="cantidad" placeholder="0">
+      <mat-error *ngIf="reseForm.controls['cantidad'].hasError('required')">
+        La cantidad es requerida.
+      </mat-error>
+    </mat-form-field>
+
+  </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Cancelar</button>
+  <button mat-raised-button color="primary" (click)="reservar()">{{actionBton}}</button>
+</div>
+

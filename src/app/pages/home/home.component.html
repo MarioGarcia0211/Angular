@@ -1,0 +1,17 @@
+<mat-sidenav-container>
+  <mat-sidenav #sideNav>
+    <mat-toolbar color="primary">Menu</mat-toolbar>
+      <app-sidenav (closeSideNavigation)="sideNav.close()"></app-sidenav>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+      <app-toolbar (SideNavigationToggle)="sideNav.toggle()"></app-toolbar>
+
+      <div class="container">
+        <router-outlet></router-outlet>
+      </div>
+
+  </mat-sidenav-content>
+
+
+</mat-sidenav-container>
